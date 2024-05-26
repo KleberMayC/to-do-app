@@ -43,7 +43,7 @@ const TodoApp: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto my-8 max-w-md">
+    <div className="container mx-auto my-8 max-w-md p-3">
       <h1 className="text-2xl font-bold mb-4">Todo App</h1>
       <div className="flex mb-4">
         <input
