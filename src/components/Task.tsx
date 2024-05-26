@@ -1,4 +1,5 @@
 import React from 'react';
+import Delete from './Delete';
 
 interface TaskProps {
   task: {
@@ -24,11 +25,13 @@ const Task: React.FC<TaskProps> = ({ task, toggleComplete, deleteTask }) => {
           {task.title}
         </span>
       </div>
+
+      
       <button
         onClick={() => deleteTask(task.id)}
         className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded"
       >
-        Delete
+       <Delete />
       </button>
     </div>
   );
